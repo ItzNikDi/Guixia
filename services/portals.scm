@@ -6,7 +6,8 @@
   #:export (portals-service portals-packages))
 
 (define portals-packages
-  (list xdg-utils xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr))
+  (list xdg-utils xdg-desktop-portal xdg-desktop-portal-gtk
+        xdg-desktop-portal-wlr))
 
 (define portals-service
   (simple-service 'labwc-portals-config home-files-service-type
