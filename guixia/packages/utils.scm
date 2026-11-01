@@ -12,6 +12,8 @@
         fastfetch-minimal
         alacritty
         fuzzel
+        nautilus
+        gvfs
         gnome-keyring
         seahorse
         hicolor-icon-theme))

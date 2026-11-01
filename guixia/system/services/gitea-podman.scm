@@ -1,4 +1,4 @@
-(define-module (guixia services gitea-podman)
+(define-module (guixia system services gitea-podman)
   #:use-module (gnu services)
   #:use-module (gnu services shepherd)
   #:use-module (gnu packages containers)

@@ -1,4 +1,4 @@
-(define-module (guixia services cloudflared)
+(define-module (guixia system services cloudflared)
   #:use-module (gnu services)
   #:use-module (gnu services base)
   #:use-module (gnu services shepherd)

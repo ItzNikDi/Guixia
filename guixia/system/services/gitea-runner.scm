@@ -1,17 +1,17 @@
-(define-module (guixia services gitea)
+(define-module (guixia system services gitea-runner)
   #:use-module (gnu services)
   #:use-module (gnu services shepherd)
-  #:use-module (guix gexp)
   #:use-module (guixia packages compose)
-  #:export (gitea-service))
+  #:use-module (guix gexp)
+  #:export (gitea-runner-service))
 
-(define gitea-service
-  (simple-service 'gitea shepherd-root-service-type
-                  (list (shepherd-service (provision '(gitea))
+(define gitea-runner-service
+  (simple-service 'gitea-runner shepherd-root-service-type
+                  (list (shepherd-service (provision '(gitea-runner))
                                           (requirement '(gitea-podman
                                                          networking))
                                           (documentation
-                                           "Gitea (compose project).")
+                                           "Gitea Actions runner (compose project).")
                                           (start #~(make-forkexec-constructor (list #$
                                                                                (file-append
                                                                                 docker-compose-v2
@@ -21,12 +21,12 @@
                                                     #:user "gitea"
                                                     #:group "gitea"
                                                     #:directory
-                                                    "/home/gitea/gitea"
+                                                    "/home/gitea/gitea_runner"
                                                     #:environment-variables (list
                                                                              "HOME=/home/gitea"
                                                                              "XDG_RUNTIME_DIR=/run/gitea"
                                                                              "DOCKER_HOST=unix:///run/gitea/podman/podman.sock"
                                                                              "PATH=/run/setuid-programs:/run/current-system/profile/bin")
                                                     #:log-file
-                                                    "/var/log/gitea.log"))
+                                                    "/var/log/gitea-runner.log"))
                                           (stop #~(make-kill-destructor))))))
