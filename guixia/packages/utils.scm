@@ -7,4 +7,11 @@
   #:export (utils))
 
 (define utils
-  (list git btop alacritty fuzzel gnome-keyring seahorse))
+  (list git
+        btop
+        fastfetch-minimal
+        alacritty
+        fuzzel
+        gnome-keyring
+        seahorse
+        hicolor-icon-theme))

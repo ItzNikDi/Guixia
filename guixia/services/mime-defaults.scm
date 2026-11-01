@@ -6,4 +6,4 @@
 (define mime-defaults-service
   (simple-service 'mime-defaults home-files-service-type
                   (list (list ".config/mimeapps.list"
-                              (local-file "/mimeapps.list")))))
+                              (local-file "mimeapps.list")))))

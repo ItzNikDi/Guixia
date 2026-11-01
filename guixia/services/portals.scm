@@ -11,4 +11,4 @@
 (define portals-service
   (simple-service 'labwc-portals-config home-files-service-type
                   (list (list ".config/xdg-desktop-portal/labwc-portals.conf"
-                              (local-file "/labwc-portals.conf")))))
+                              (local-file "labwc-portals.conf")))))
