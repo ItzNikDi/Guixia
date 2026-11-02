@@ -1,4 +1,4 @@
-(define-module (guixia packages utils)
+(define-module (guixia home packages utils)
   #:use-module (gnu packages version-control)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages terminals)

@@ -6,4 +6,4 @@
 (define containers-config-service
   (simple-service 'containers-config etc-service-type
                   `(("containers/containers.conf" ,(local-file
-                                                    "../../../files/containers.conf")))))
+                                                    "../../../files/.config/containers.conf")))))

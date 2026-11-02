@@ -1,4 +1,4 @@
-(define-module (guixia packages devtools)
+(define-module (guixia home packages devtools)
   #:use-module (nongnu packages editors)
   #:export (devtools))
 

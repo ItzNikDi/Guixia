@@ -7,4 +7,4 @@
   (simple-service 'fish-config-service
                   home-xdg-configuration-files-service-type
                   `(("fish/config.fish" ,(local-file
-                                          "../../../files/config.fish")))))
+                                          "../../../files/.config/fish/config.fish")))))

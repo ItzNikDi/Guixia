@@ -7,4 +7,4 @@
   (simple-service 'niri-portals-config
                   home-xdg-configuration-files-service-type
                   `(("xdg-desktop-portal/niri-portals.conf" ,(local-file
-                                                              "../../../files/niri-portals.conf")))))
+                                                              "../../../files/.config/xdg-desktop-portal/niri-portals.conf")))))

@@ -1,4 +1,4 @@
-(define-module (guixia packages browser)
+(define-module (guixia home packages browser)
   #:use-module (gnu packages librewolf)
   #:export (browser))
 

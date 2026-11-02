@@ -1,12 +1,13 @@
-(define-module (guixia packages compose)
+(define-module (guixia system packages compose)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix gexp)
   #:use-module (guix build-system copy)
   #:use-module ((guix licenses)
-                #:prefix license:))
+                #:prefix license:)
+  #:export (docker-compose-v2))
 
-(define-public docker-compose-v2
+(define docker-compose-v2
   (package
     (name "docker-compose-v2")
     (version "5.6.1")

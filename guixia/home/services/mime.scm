@@ -6,4 +6,4 @@
 (define mime-defaults-service
   (simple-service 'mime-defaults home-xdg-configuration-files-service-type
                   `(("mimeapps.list" ,(local-file
-                                       "../../../files/mimeapps.list")))))
+                                       "../../../files/.config/mimeapps.list")))))

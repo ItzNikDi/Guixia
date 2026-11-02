@@ -1,0 +1,3 @@
+Icon pack: Qogir
+Variant: Manjaro
+Source: https://pling.com/p/1296407/
