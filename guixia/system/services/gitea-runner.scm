@@ -1,7 +1,7 @@
 (define-module (guixia system services gitea-runner)
   #:use-module (gnu services)
   #:use-module (gnu services shepherd)
-  #:use-module (guixia packages compose)
+  #:use-module (guixia system packages compose)
   #:use-module (guix gexp)
   #:export (gitea-runner-service))
 

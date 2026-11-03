@@ -6,7 +6,7 @@
   #:use-module (gnu system shadow)
   #:use-module (gnu packages admin)
   #:use-module (guix gexp)
-  #:use-module (guixia packages cloudflared)
+  #:use-module (guixia system packages cloudflared)
   #:export (cloudflared-services))
 
 (define cloudflared-services
