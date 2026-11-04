@@ -3,6 +3,8 @@ fish_add_path "$GUIX_PROFILE/bin"
 set -gax XDG_DATA_DIRS $GUIX_PROFILE/share
 set -gx GUIX_LOCPATH $GUIX_PROFILE/lib/locale
 
+set -gax XCURSOR_PATH $HOME/.local/share/icons
+
 function fish_greeting
     fastfetch
 end

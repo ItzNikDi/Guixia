@@ -37,13 +37,15 @@
             (lambda _
               (let* ((out #$output)
                      (libc #$(this-package-input "glibc"))
-                    (rpath (string-join
-        (list (string-append out "/lib")
-              (string-append libc "/lib")
-              (string-append #$gcc:lib "/lib")
-              (string-append #$(this-package-input "cups") "/lib")
-              (string-append #$(this-package-input "libusb") "/lib"))
-        ":")))
+                     (rpath (string-join (list (string-append out "/lib")
+                                               (string-append libc "/lib")
+                                               (string-append #$gcc:lib "/lib")
+                                               (string-append #$(this-package-input
+                                                                 "cups")
+                                                              "/lib")
+                                               (string-append #$(this-package-input
+                                                                 "libusb")
+                                                              "/lib")) ":")))
                 (for-each (lambda (f)
                             (invoke "patchelf"
                                     "--set-interpreter"

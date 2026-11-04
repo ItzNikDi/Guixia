@@ -7,4 +7,4 @@
   (simple-service 'fuzzel-config-service
                   home-xdg-configuration-files-service-type
                   `(("fuzzel/fuzzel.ini" ,(local-file
-                                          "../../../files/.config/fuzzel/fuzzel.ini")))))
+                                           "../../../files/.config/fuzzel/fuzzel.ini")))))
