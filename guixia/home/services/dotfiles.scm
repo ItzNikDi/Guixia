@@ -5,6 +5,5 @@
 
 (define dotfiles-service
   (service home-dotfiles-service-type
-           (home-dotfiles-configuration
-             (layout 'plain)
-             (directories '("../../../home-files")))))
+           (home-dotfiles-configuration (layout 'plain)
+                                        (directories '("../../../home-files")))))

@@ -8,7 +8,8 @@
   #:export (desktop))
 
 (define desktop
-  (list polkit-gnome
+  (list niri
+        polkit-gnome
         awww
         waybar
         swayidle
