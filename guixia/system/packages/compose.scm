@@ -10,7 +10,7 @@
 (define docker-compose-v2
   (package
     (name "docker-compose-v2")
-    (version "5.6.1")
+    (version "5.7.1")
     (source
      (origin
        (method url-fetch)
@@ -19,7 +19,7 @@
              "/docker-compose-linux-x86_64"))
        (file-name (string-append "docker-compose-" version))
        (sha256
-        (base32 "1h5qbl5im08rj53akhxlhf3ha67hz01m56cifbmcrlz66r17yws7"))))
+        (base32 "1kv4802xpm754pxxxfiwf9gryqzh74fcqc7fzh9fhpdgm0i6fhmg"))))
     (build-system copy-build-system)
     (arguments
      (list
