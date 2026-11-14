@@ -54,7 +54,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-ssh_symbol = "󰢹 "
+ssh_symbol = " 󰢹"
 style = "bold system"
 
 [directory]
