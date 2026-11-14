@@ -10,7 +10,7 @@
 (define cloudflared
   (package
     (name "cloudflared")
-    (version "2026.10.7")
+    (version "2026.11.0")
     (source
      (origin
        (method url-fetch)
@@ -19,7 +19,7 @@
              version "/cloudflared-linux-amd64"))
        (file-name (string-append "cloudflared-" version))
        (sha256
-        (base32 "0whqz6wpm8abfp9a75b237k7fanqj74pq2l7inxc5pl3id8zp68z"))))
+        (base32 "1zai5ac7s0zbvs967w42b4smjnyfxy4ygmvm80b6jwpday5wdxsi"))))
     (build-system copy-build-system)
     (arguments
      (list
